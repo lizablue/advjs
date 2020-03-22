@@ -36,3 +36,12 @@ function printFruits() {
 }
 
 printFruits();
+
+thisFunc();
+function thisFunc() {
+    console.log('hello ' + name);
+}
+sayHello();
+function sayHello() {
+    alert('hi');
+}
