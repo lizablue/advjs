@@ -1,3 +1,4 @@
+// hoisting
 name = 'liz';
 var name;
 console.log(name);
@@ -14,3 +15,19 @@ function findAvg(a, b) {
     var answer = (a+b)/2;
     return answer;
 }
+
+// scoping
+let fruits = ['apple', 'strawberry', 'pear'];
+let favFruit;
+
+function printFruits() {
+    favFruit = fruits[1];
+    console.log(fruits[0]);
+};
+
+function printFavFruit() {
+    console.log(favFruit);
+};
+
+printFruits();
+printFavFruit();
