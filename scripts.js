@@ -18,16 +18,21 @@ function findAvg(a, b) {
 
 // scoping
 let fruits = ['apple', 'strawberry', 'pear'];
-let favFruit;
 
 function printFruits() {
-    favFruit = fruits[1];
+    let favFruit = fruits[1];
     console.log(fruits[0]);
-};
 
-function printFavFruit() {
-    console.log(favFruit);
-};
+    function printFavFruit() {
+        console.log(favFruit);
+    }
+    printFavFruit();
+    
+    let leastFav = fruits[2];
+    function printLeastFav() {
+        console.log(leastFav);
+    }
+    printLeastFav();
+}
 
 printFruits();
-printFavFruit();
